@@ -35,4 +35,10 @@ public class PhotographerTest {
     photographer.deleteCamera(camera1);
     assertEquals(1, photographer.camerasCount());
   }
+
+  @Test
+  public void canAddJournalEntries(){
+    photographer.addJournal("01012017", 5);
+    assertEquals(5, photographer.getNumberOfPhotos("01012017"));
+  }
 }
