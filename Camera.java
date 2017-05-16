@@ -1,4 +1,4 @@
-public class Camera {
+public class Camera implements Printable{
   private String make;
 
   public Camera(String make){
@@ -7,5 +7,9 @@ public class Camera {
 
   public String getMake(){
     return this.make;
+  }
+
+  public String printDetails(){
+    return String.format("%s details", this.make);
   }
 }

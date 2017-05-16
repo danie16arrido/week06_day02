@@ -14,4 +14,9 @@ public class CameraTest {
   public void hasMake(){
     assertEquals("Sony", camera.getMake());
   }
+
+  @Test
+  public void hasPrintDetails(){
+    assertEquals("Sony details", camera.printDetails());
+  }
 }
