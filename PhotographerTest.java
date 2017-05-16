@@ -4,14 +4,14 @@ import org.junit.*;
 
 public class PhotographerTest {
   Photographer photographer;
-  Camera camera1;
-  Camera camera2;
+  DigitalCamera camera1;
+  AnalogCamera camera2;
 
   @Before
   public void before(){
     photographer = new Photographer("Daniel");
-    camera1 = new Camera("Sony", "Compact", 10);
-    camera2 = new Camera("Cannon", "Mid Size SLR", 15);
+    camera1 = new DigitalCamera("Sony", "Compact", 10);
+    camera2 = new AnalogCamera("Cannon", "Mid Size SLR", 15);
   }
 
   @Test

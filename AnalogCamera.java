@@ -1,9 +1,9 @@
-public class Camera implements Printable{
+public class AnalogCamera implements Printable{
   private String make;
   private String bodyType;
   private int efectivePixelsMega;
 
-  public Camera(String make, String bodyType, int efectivePixelsMega){
+  public AnalogCamera(String make, String bodyType, int efectivePixelsMega){
     this.make = make;
     this.bodyType = bodyType;
     this.efectivePixelsMega = efectivePixelsMega;

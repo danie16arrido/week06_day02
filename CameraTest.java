@@ -17,6 +17,6 @@ public class CameraTest {
 
   @Test
   public void hasPrintDetails(){
-    assertEquals("Sony details", camera.printDetails());
+    assertEquals("Soney details: \n\tBody Type: Compact \n\tMegaPixels: 10", camera.printDetails());
   }
 }

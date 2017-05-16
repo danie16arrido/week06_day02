@@ -2,12 +2,12 @@ import java.util.ArrayList;
 
 public class Photographer {
   private String name;
-  private ArrayList<Camera> myCameras;
+  private ArrayList<Printable> myCameras;
 
 
   public Photographer(String name) {
     this.name = name;
-    this.myCameras = new ArrayList<Camera>();
+    this.myCameras = new ArrayList<Printable>();
   }
 
   public String getName(){
@@ -18,11 +18,11 @@ public class Photographer {
     return myCameras.size();
   }
 
-  public void addCamera(Camera camera){
+  public void addCamera(Printable camera){
     myCameras.add(camera);
   }
 
-  public void deleteCamera(Camera camera){
+  public void deleteCamera(DigitalCamera camera){
     int idx = 0;
     while (idx < myCameras.size())
     {
