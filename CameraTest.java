@@ -7,7 +7,7 @@ public class CameraTest {
 
   @Before
   public void before(){
-    camera = new Camera("Sony");
+    camera = new Camera("Sony", "Compact", 10);
   }
 
   @Test
